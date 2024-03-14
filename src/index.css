@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  font-family: Nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.select-box {
+  box-shadow: rgb(243, 243, 243) 0px 0px 0px 1px inset;
+  border-radius: 8px;
+}
+.dark.select-box {
+  box-shadow: rgb(3, 9, 33) 0px 0px 0px 1px inset;
+  border-radius: 8px;
+}
+.left-select {
+  position: absolute;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  border-radius: 8px;
+  pointer-events: none;
+  transition: transform 150ms ease-in-out 0s;
+}
+.middle-select {
+  padding: 4px 10px;
+  min-width: 20px;
+  font-weight: 700;
+  user-select: none;
+  outline: none;
+  text-align: center;
+  z-index: 1;
+  transition: color 100ms ease-in-out 0s;
+}
+
+.right-select {
+  padding: 4px 10px;
+  min-width: 20px;
+  font-weight: 700;
+  user-select: none;
+  outline: none;
+  text-align: center;
+  z-index: 1;
+  transition: color 100ms ease-in-out 0s;
+}
+
+#Scrollbar::-webkit-scrollbar {
+  height: 12px;
+}
+#Scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+  border: 1.5px solid #7e7e7e;
+  border-radius: 8px;
+}
+#Scrollbar::-webkit-scrollbar-thumb {
+  background-color: #f1f1f1;
+  border: 2px solid #616161;
+  border-radius: 8px;
+}
+
+.page-button {
+  border-radius: 4px;
+  height: 28px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 4px 8px;
+  text-align: center;
+  cursor: default;
+  opacity: 0.6;
+}
